@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}     % for A, B, C, D options
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+% Keep paragraphs flush-left (fixes misalignment in Answers section)
+\setlength{\parindent}{0pt}
+
+% Helpers for cross-links between questions and answers
+\newcommand{\seeanswer}[1]{%
+  \par\smallskip\emph{\hyperref[ans:#1]{See answer → page \pageref{ans:#1}}}%
+}
+
+\newcommand{\answer}[2]{%
+  \textbf{Question #1}\label{ans:#1}: #2\par
+  \smallskip\emph{\hyperref[q:#1]{Back to Question #1}}\par\medskip
+}
+
+\title{SnowPro Core — Practice Questions}
+\author{Roushan Ara}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% -----------------------------
+% QUESTIONS
+% -----------------------------
+\section*{Questions}
+
+\subsection*{Question 1}\label{q:1}
+Snowflake provides a mechanism for its customers to override its natural clustering algorithms. This method is:
+
+\begin{enumerate}[label=\Alph*.]
+  \item Micro-partitions
+  \item Clustering keys
+  \item Key partitions
+  \item Clustered partitions
+\end{enumerate}
+\seeanswer{1}
+
+\subsection*{Question 2}\label{q:2}
+Which of the following are valid Snowflake Virtual Warehouse Scaling Policies? (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Custom
+  \item Economy
+  \item Optimized
+  \item Standard
+\end{enumerate}
+\seeanswer{2}
+
+\subsection*{Question 3}\label{q:3}
+True or False: A single database can exist in more than one Snowflake account.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{3}
+
+\subsection*{Question 4}\label{q:4}
+Which of the following roles is recommended to be used to create and manage users and roles?
+
+\begin{enumerate}[label=\Alph*.]
+  \item SYSADMIN
+  \item SECURITYADMIN
+  \item PUBLIC
+  \item ACCOUNTADMIN
+\end{enumerate}
+\seeanswer{4}
+
+\subsection*{Question 5}\label{q:5}
+True or False: Bulk unloading of data from Snowflake supports the use of a SELECT statement.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{5}
+
+\subsection*{Question 6}\label{q:6}
+Select the different types of Internal Stages: (Choose three.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Named Stage
+  \item User Stage
+  \item Table Stage
+  \item Schema Stage
+\end{enumerate}
+\seeanswer{6}
+
+\subsection*{Question 7}\label{q:7}
+True or False: A customer using SnowSQL / native connectors will be unable to also use the Snowflake Web Interface (UI) unless access to the UI is explicitly granted by support.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{7}
+
+\subsection*{Question 8}\label{q:8}
+Account-level storage usage can be monitored via:
+
+\begin{enumerate}[label=\Alph*.]
+  \item The Snowflake Web Interface (UI) in the Databases section
+  \item The Snowflake Web Interface (UI) in the Account $\rightarrow$ Billing \& Usage section
+  \item The Information Schema $\rightarrow$ ACCOUNT\_USAGE\_HISTORY View
+  \item The Account Usage Schema $\rightarrow$ ACCOUNT\_USAGE\_METRICS View
+\end{enumerate}
+\seeanswer{8}
+
+\subsection*{Question 9}\label{q:9}
+Credit Consumption by the Compute Layer (Virtual Warehouses) is based on: (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Number of users
+  \item Warehouse size
+  \item Amount of data processed
+  \item Number of clusters for the Warehouse
+\end{enumerate}
+\seeanswer{9}
+% -----------------------------
+% ANSWERS (start on new page)
+% -----------------------------
+\newpage
+\section*{Answers}
+
+\answer{1}{B. Clustering keys\\
+They allow customers to explicitly define clustering for performance optimization.}
+
+\answer{2}{B. Economy \textbf{and} D. Standard\\
+These are the only valid Snowflake Virtual Warehouse scaling policies.}
+
+\answer{3}{B. False\\
+A Snowflake database belongs to a single account and cannot exist in more than one account.}
+
+\answer{4}{B. SECURITYADMIN\\
+This role is specifically responsible for creating and managing users and roles.}
+
+\answer{5}{A. True\\
+Bulk unloading supports the use of a SELECT statement to filter and transform data before writing to files.}
+
+\answer{6}{A. Named Stage, B. User Stage, and C. Table Stage\\
+These are the three types of internal stages in Snowflake.}
+
+\answer{7}{B. False\\
+SnowSQL and native connectors can be used independently of the Web UI; UI access does not require explicit support enablement.}
+
+\answer{8}{D. The Account Usage Schema $\rightarrow$ ACCOUNT\_USAGE\_METRICS View\\
+This view provides account-level storage usage details.}
+
+\answer{9}{B. Warehouse size \textbf{and} D. Number of clusters for the Warehouse\\
+Credit consumption depends on warehouse size and the number of clusters in multi-cluster warehouses.}
+
+\end{document}
