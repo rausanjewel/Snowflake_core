@@ -119,6 +119,442 @@ Credit Consumption by the Compute Layer (Virtual Warehouses) is based on: (Choos
   \item Number of clusters for the Warehouse
 \end{enumerate}
 \seeanswer{9}
+
+\subsection*{Question 10}\label{q:10}
+Which statement best describes `clustering`?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Clustering represents the way data is grouped together and stored within Snowflake's micro-partitions
+  \item The database administrator must define the clustering methodology for each Snowflake table
+  \item The clustering key must be included on the COPY command when loading data into Snowflake
+  \item Clustering can be disabled within a Snowflake account
+\end{enumerate}
+\seeanswer{10}
+
+\subsection*{Question 11}\label{q:11}
+True or False: The COPY command must specify a File Format in order to execute.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{11}
+
+\subsection*{Question 12}\label{q:12}
+Which of the following commands sets the Virtual Warehouse for a session?
+
+\begin{enumerate}[label=\Alph*.]
+  \item COPY WAREHOUSE FROM \textless config file\textgreater
+  \item SET WAREHOUSE = \textless warehouse name\textgreater
+  \item USE WAREHOUSE \textless warehouse name\textgreater
+  \item USE VIRTUAL\_WAREHOUSE \textless warehouse name\textgreater
+\end{enumerate}
+\seeanswer{12}
+
+\subsection*{Question 13}\label{q:13}
+Which of the following objects can be cloned? (Choose four.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Tables
+  \item Named File Formats
+  \item Schemas
+  \item Shares
+  \item Databases
+  \item Users
+\end{enumerate}
+\seeanswer{13}
+
+\subsection*{Question 14}\label{q:14}
+Which object allows you to limit the number of credits consumed within a Snowflake account?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Account Usage Tracking
+  \item Resource Monitor
+  \item Warehouse Limit Parameter
+  \item Credit Consumption Tracker
+\end{enumerate}
+\seeanswer{14}
+
+\subsection*{Question 15}\label{q:15}
+Snowflake is designed for which type of workloads? (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item OLAP (Analytics) workloads
+  \item OLTP (Transactional) workloads
+  \item Concurrent workloads
+  \item On-premise workloads
+\end{enumerate}
+\seeanswer{15}
+
+\subsection*{Question 16}\label{q:16}
+What are the three layers that make up Snowflake's architecture? (Choose three.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Compute
+  \item Tri-Secret Secure
+  \item Storage
+  \item Cloud Services
+\end{enumerate}
+\seeanswer{16}
+
+\subsection*{Question 17}\label{q:17}
+Why would a customer size a Virtual Warehouse from an X-Small to a Medium?
+
+\begin{enumerate}[label=\Alph*.]
+  \item To accommodate more queries
+  \item To accommodate more users
+  \item To accommodate fluctuations in workload
+  \item To accommodate a more complex workload
+\end{enumerate}
+\seeanswer{17}
+
+\subsection*{Question 18}\label{q:18}
+True or False: Reader Accounts incur no additional Compute costs to the Data Provider since they are simply reading the shared data without making changes.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{18}
+
+\subsection*{Question 19}\label{q:19}
+Which of the following connectors allow Multi-Factor Authentication (MFA) authorization when connecting? (Choose all that apply.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item JDBC
+  \item SnowSQL
+  \item Snowflake Web Interface (UI)
+  \item ODBC
+  \item Python
+\end{enumerate}
+\seeanswer{19}
+
+\subsection*{Question 20}\label{q:20}
+True or False: Snowflake charges a premium for storing semi-structured data.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{20}
+
+\subsection*{Question 21}\label{q:21}
+Which of the following statements describes a benefit of Snowflake's separation of compute and storage? (Choose all that apply.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Growth of storage and compute are tightly coupled together
+  \item Storage expands without the requirement to add more compute
+  \item Compute can be scaled up or down without the requirement to add more storage
+  \item Multiple compute clusters can access stored data without contention
+\end{enumerate}
+\seeanswer{21}
+
+\subsection*{Question 22}\label{q:22}
+True or False: It is possible to unload structured data to semi-structured formats such as JSON and Parquet.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{22}
+
+\subsection*{Question 23}\label{q:23}
+In which layer of its architecture does Snowflake store its metadata statistics?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Storage Layer
+  \item Compute Layer
+  \item Database Layer
+  \item Cloud Services Layer
+\end{enumerate}
+\seeanswer{23}
+
+\subsection*{Question 24}\label{q:24}
+True or False: Data in fail-safe can be deleted by a user or the Snowflake team before it expires.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{24}
+
+\subsection*{Question 25}\label{q:25}
+True or False: Snowflake's data warehouse was built from the ground up for the cloud in lieu of using an existing database or a platform?
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+\seeanswer{25}
+
+\subsection*{Question 26}\label{q:26}
+Which of the following statements are true of Virtual Warehouses? (Choose all that apply.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Customers can change the size of the Warehouse after creation
+  \item A Warehouse can be resized while running
+  \item A Warehouse can be configured to suspend after a period of inactivity
+  \item A Warehouse can be configured to auto-resume when new queries are submitted
+\end{enumerate}
+\seeanswer{26}
+
+\subsection*{Question 27}\label{q:27}
+The PUT command: (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Automatically creates a File Format object
+  \item Automatically uses the last Stage created
+  \item Automatically compresses files using Gzip
+  \item Automatically encrypts files
+\end{enumerate}
+\seeanswer{27}
+
+\subsection*{Question 28}
+Which type of table corresponds to a single Snowflake session?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Temporary
+  \item Transient
+  \item Provisional
+  \item Permanent
+\end{enumerate}
+
+\subsection*{Question 29}
+Which interfaces can be used to create and/or manage Virtual Warehouses?
+
+\begin{enumerate}[label=\Alph*.]
+  \item The Snowflake Web Interface (UI)
+  \item SQL commands
+  \item Data integration tools
+  \item All of the above
+\end{enumerate}
+
+\subsection*{Question 30}
+When a Pipe is recreated using the CREATE OR REPLACE PIPE command:
+
+\begin{enumerate}[label=\Alph*.]
+  \item The Pipe load history is reset to empty
+  \item The REFRESH parameter is set to TRUE
+  \item Previously loaded files will be ignored
+  \item All of the above
+\end{enumerate}
+
+\subsection*{Question 31}
+What is the minimum Snowflake edition that customers planning on storing protected information in Snowflake should consider for regulatory compliance?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Standard
+  \item Premier
+  \item Enterprise
+  \item Business Critical Edition
+\end{enumerate}
+
+\subsection*{Question 32}
+Select the three types of tables that exist within Snowflake. (Choose three.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Temporary
+  \item Transient
+  \item Provisional
+  \item Permanent
+\end{enumerate}
+
+\subsection*{Question 33}
+True or False: Snowpipe via REST API can only reference External Stages as source.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
+\subsection*{Question 34}
+True or False: A third-party tool that supports standard JDBC or ODBC but has no Snowflake-specific driver will be unable to connect to Snowflake.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
+\subsection*{Question 35}
+True or False: It is possible to load data into Snowflake without creating a named File Format object.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
+\subsection*{Question 36}
+True or False: A table in Snowflake can only be queried using the Virtual Warehouse that was used to load the data.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
+\subsection*{Question 37}
+Which of the following statements are true of Snowflake data loading? (Choose three.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item VARIANT null values are not the same as SQL NULL values
+  \item It is recommended to do frequent, single row DMLs
+  \item It is recommended to validate the data before loading into the Snowflake target table
+  \item It is recommended to use staging tables to manage MERGE statements
+\end{enumerate}
+
+\subsection*{Question 38}
+Which statements are true of micro-partitions? (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item They are approximately 16MB in size
+  \item They are stored compressed only if COMPRESS=TRUE on Table
+  \item They are immutable
+  \item They are only encrypted in the Enterprise edition and above
+\end{enumerate}
+
+\subsection*{Question 39}
+True or False: Query IDs are unique across all Snowflake deployments and can be used in communication with Snowflake Support to help troubleshoot issues.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
+\subsection*{Question 40}
+A deterministic query is run at 8am, takes 5 minutes, and the results are cached. Which of the following statements are true? (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item The exact query will ALWAYS return the precomputed result set for the RESULT\_CACHE\_ACTIVE = time period
+  \item The same exact query will return the precomputed results if the underlying data hasn’t changed and the results were last accessed within previous 24 hour period
+  \item The same exact query will return the precomputed results even if the underlying data has changed as long as the results were last accessed within the previous 24 hour period
+  \item The 24 hour timer on the precomputed results gets renewed every time the exact query is executed
+\end{enumerate}
+
+\subsection*{Question 41}
+Increasing the maximum number of clusters in a Multi-Cluster Warehouse is an example of:
+
+\begin{enumerate}[label=\Alph*.]
+  \item Scaling rhythmically
+  \item Scaling max
+  \item Scaling out
+  \item Scaling up
+\end{enumerate}
+
+\subsection*{Question 42}
+Which statement best describes Snowflake tables?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Snowflake tables are logical representations of underlying physical data
+  \item Snowflake tables are the physical instantiation of data loaded into Snowflake
+  \item Snowflake tables require that clustering keys be defined to perform optimally
+  \item Snowflake tables are owned by a user
+\end{enumerate}
+
+\subsection*{Question 43}
+Which item in the Data Warehouse migration process does not apply in Snowflake?
+
+\begin{enumerate}[label=\Alph*.]
+  \item Migrate Users
+  \item Migrate Schemas
+  \item Migrate Indexes
+  \item Build the Data Pipeline
+\end{enumerate}
+
+\subsection*{Question 44}
+Snowflake provides two mechanisms to reduce data storage costs for short-lived tables. These mechanisms are: (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Temporary Tables
+  \item Transient Tables
+  \item Provisional Tables
+  \item Permanent Tables
+\end{enumerate}
+
+\subsection*{Question 45}
+What is the maximum compressed row size in Snowflake?
+
+\begin{enumerate}[label=\Alph*.]
+  \item 8KB
+  \item 16MB
+  \item 50MB
+  \item 4000GB
+\end{enumerate}
+
+\subsection*{Question 46}
+Which of the following are main sections of the top navigation of the Snowflake Web Interface (UI)? (Choose three.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Databases
+  \item Tables
+  \item Warehouses
+  \item Worksheets
+\end{enumerate}
+
+\subsection*{Question 47}
+What is the recommended Snowflake data type to store semi-structured data like JSON?
+
+\begin{enumerate}[label=\Alph*.]
+  \item VARCHAR
+  \item RAW
+  \item LOB
+  \item VARIANT
+\end{enumerate}
+
+\subsection*{Question 48}
+Which of the following statements are true of Snowflake releases: (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item They happen approximately weekly
+  \item They roll up and release approximately monthly, but customers can request early release application
+  \item During a release, new customer requests/queries/connections transparently move over to the newer version
+  \item A customer is assigned a 30 minute window (that can be moved anytime within a week) during which the system will be unavailable and customer is upgraded
+\end{enumerate}
+
+\subsection*{Question 49}
+Which of the following are common use cases for zero-copy cloning? (Choose three.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Quick provisioning of Dev and Test/QA environments
+  \item Data backups
+  \item Point in time snapshots
+  \item Performance optimization
+\end{enumerate}
+
+\subsection*{Question 50}
+If a Small Warehouse is made up of 2 servers/cluster, how many servers/cluster make up a Medium Warehouse?
+
+\begin{enumerate}[label=\Alph*.]
+  \item 4
+  \item 16
+  \item 32
+  \item 128
+\end{enumerate}
+
+\subsection*{Question 51}
+True or False: When a data share is established between a Data Provider and a Data Consumer, the Data Consumer can extend that data share to other Data consumers.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
+\subsection*{Question 52}
+Which is true of Snowflake network policies? A Snowflake network policy: (Choose two.)
+
+\begin{enumerate}[label=\Alph*.]
+  \item Is available to all Snowflake Editions
+  \item Is only available to customers with Business Critical Edition
+  \item Restricts or enables access to specific IP addresses
+  \item Is activated using an ALTER DATABASE command
+\end{enumerate}
+
+\subsection*{Question 53}
+True or False: Snowflake charges additional fees to Data Providers for each Share they create.
+
+\begin{enumerate}[label=\Alph*.]
+  \item True
+  \item False
+\end{enumerate}
+
 % -----------------------------
 % ANSWERS (start on new page)
 % -----------------------------
@@ -151,5 +587,139 @@ This view provides account-level storage usage details.}
 
 \answer{9}{B. Warehouse size \textbf{and} D. Number of clusters for the Warehouse\\
 Credit consumption depends on warehouse size and the number of clusters in multi-cluster warehouses.}
+
+\answer{10}{A. Clustering represents the way data is grouped together and stored within Snowflake's micro-partitions\\
+Clustering is Snowflake's method of organizing micro-partition storage.}
+
+\answer{11}{A. True\\
+The COPY command requires a file format (or defaults) to execute properly.}
+
+\answer{12}{C. USE WAREHOUSE \textless warehouse name\textgreater\\
+This command sets the active virtual warehouse for the session.}
+
+\answer{13}{A. Tables, C. Schemas, D. Shares, E. Databases\\
+These Snowflake objects can be cloned. Named file formats and users cannot.}
+
+\answer{14}{B. Resource Monitor\\
+Resource monitors are used to limit and control credit consumption within a Snowflake account.}
+
+\answer{15}{A. OLAP (Analytics) workloads \textbf{and} C. Concurrent workloads\\
+Snowflake is designed for analytics and concurrent workloads, not OLTP or on-premise.}
+
+\answer{16}{A. Compute, C. Storage, D. Cloud Services\\
+These are the three layers of Snowflake’s architecture.}
+
+\answer{17}{B. To accommodate more users\\
+Larger virtual warehouses support more users running queries concurrently.}
+
+\answer{18}{B. False\\
+Reader Accounts still generate compute costs for the provider since queries executed on shared data consume compute resources.}
+
+\answer{19}{C. Snowflake Web Interface (UI) and B. SnowSQL\\
+MFA is supported through the web interface and SnowSQL client, but not directly via JDBC/ODBC/Python.}
+
+\answer{20}{B. False\\
+Snowflake does not charge a premium for semi-structured data; it is stored in VARIANT columns without extra fees beyond normal storage.}
+
+\answer{21}{B. Storage expands without adding compute, C. Compute scales independently of storage, D. Multiple clusters can access data without contention\\
+These are the key benefits of separating compute from storage in Snowflake.}
+
+\answer{22}{A. True\\
+Snowflake supports unloading structured data into semi-structured formats such as JSON and Parquet.}
+
+\answer{23}{D. Cloud Services Layer\\
+Snowflake stores and manages metadata statistics in the Cloud Services layer.}
+
+\answer{24}{B. False\\
+Fail-safe is managed entirely by Snowflake and cannot be modified or deleted by users or Snowflake staff before expiration.}
+
+\answer{25}{A. True\\
+Snowflake was designed from the ground up as a cloud-native data warehouse platform, not adapted from an on-premise system.}
+
+\answer{26}{A. Customers can change size after creation, C. Suspend after inactivity, D. Auto-resume on query submission\\
+Warehouses cannot be resized dynamically while running (option B is false).}
+
+\answer{27}{C. Automatically compresses files using Gzip, D. Automatically encrypts files\\
+The PUT command automatically applies Gzip compression and encryption for uploaded files.}
+
+\textbf{Question 28:} A. Temporary \\
+Temporary tables last only for the duration of a session and are automatically dropped.
+
+\textbf{Question 29:} D. All of the above \\
+Snowflake Web UI, SQL commands, and integration tools can all be used to create and manage Virtual Warehouses.
+
+\textbf{Question 30:} D. All of the above \\
+When a pipe is recreated, its load history resets, REFRESH defaults to TRUE, and prior files are ignored.
+
+\textbf{Question 31:} D. Business Critical Edition \\
+This edition is the minimum required for customers with regulatory compliance needs.
+
+\textbf{Question 32:} A. Temporary, B. Transient, D. Permanent \\
+Snowflake supports three types of tables: Temporary, Transient, and Permanent. "Provisional" is not valid.
+
+\textbf{Question 33:} A. True \\
+Snowpipe via REST API can only reference external stages as its data source.
+
+\textbf{Question 34:} B. False \\
+Any tool that supports standard JDBC/ODBC can connect to Snowflake using its JDBC/ODBC drivers.
+
+\textbf{Question 35:} A. True \\
+Snowflake allows loading using inline file format options, without requiring a named File Format object.
+
+\textbf{Question 36:} B. False \\
+Tables in Snowflake are independent of the Virtual Warehouse used for loading — they can be queried using any active warehouse with permissions.
+
+\textbf{Question 37:} A. VARIANT null values are not the same as SQL NULL values, 
+C. It is recommended to validate the data before loading, 
+D. It is recommended to use staging tables \\
+Frequent single-row DMLs (option B) are discouraged since they are inefficient in Snowflake.
+
+\textbf{Question 38:} A. They are approximately 16MB in size, C. They are immutable \\
+Micro-partitions are fixed in size (around 16MB), compressed automatically, and immutable.
+
+\textbf{Question 39:} A. True \\
+Each query ID is globally unique across all Snowflake deployments and useful for troubleshooting with Support.
+
+\textbf{Question 40:} B. The same query returns precomputed results if data hasn’t changed and results accessed in last 24h, 
+D. The 24h timer is renewed each time the exact query executes \\
+Caching ensures faster response as long as results remain valid and accessed within the 24-hour retention.
+
+\textbf{Question 41:} C. Scaling out \\
+Scaling out increases the number of clusters in a multi-cluster warehouse, while scaling up increases the size of a single cluster.
+\textbf{Question 42:} A. Snowflake tables are logical representations of underlying physical data \\
+Snowflake manages the physical storage; users work with logical representations.
+
+\textbf{Question 43:} C. Migrate Indexes \\
+Indexes are not used in Snowflake; instead, Snowflake uses micro-partitions for efficient data access.
+
+\textbf{Question 44:} A. Temporary Tables and B. Transient Tables \\
+Both are designed for short-lived or cost-sensitive data storage, reducing costs compared to permanent tables.
+
+\textbf{Question 45:} A. 8KB \\
+Snowflake’s maximum compressed row size is 8KB, due to micro-partition storage constraints.
+
+\textbf{Question 46:} A. Databases, C. Warehouses, D. Worksheets \\
+These are the primary sections visible in the Snowflake UI navigation bar.
+
+\textbf{Question 47:} D. VARIANT \\
+The VARIANT data type is specifically designed to store semi-structured data such as JSON, Avro, ORC, or Parquet.
+
+\textbf{Question 48:} B. They roll up and release approximately monthly, but customers can request early release application; C. During a release, new customer requests/queries/connections transparently move over to the newer version \\
+Snowflake upgrades are seamless, transparent, and typically follow a monthly release cycle.
+
+\textbf{Question 49:} A. Quick provisioning of Dev and Test/QA environments; B. Data backups; C. Point in time snapshots \\
+These are the most common scenarios for zero-copy cloning as they require fast and efficient duplication without storage overhead.
+
+\textbf{Question 50:} B. 16 \\
+A Medium Warehouse has 8x the capacity of an X-Small, with 16 servers per cluster.
+
+\textbf{Question 51:} B. False \\
+Consumers cannot extend a Data Share to others; only the Data Provider controls the share.
+
+\textbf{Question 52:} B. Is only available to customers with Business Critical Edition; C. Restricts or enables access to specific IP addresses \\
+Network policies are exclusive to Business Critical Edition and allow IP-based access control.
+
+\textbf{Question 53:} B. False \\
+Snowflake does not charge Data Providers for creating shares; costs are incurred only when Data Consumers use the data.
 
 \end{document}
